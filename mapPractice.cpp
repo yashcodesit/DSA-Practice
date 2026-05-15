@@ -37,30 +37,35 @@ int main(){
     // }
 
     // maximum frequency
-    vector<int> arr = {4,1,2,2,3,2,4,4,4};
-    map<int,int> mp;
-    int max = 0;
-    for (int i = 0; i < arr.size(); i++)
-    {
-        mp[arr[i]]++;
-    }
-    map<int,int>::iterator it = mp.begin();
-    while(it!=mp.end()){
-        pair<int,int> pr = *it;
-        if(pr.second>max){
-            max = pr.second;
-        }
-        it++;
-    }
-    it = mp.begin();
-    while(it!=mp.end()){
-        pair<int,int> pr = *it;
-        if(pr.second==max){
-            cout<<pr.second<<endl;
-        }
-        it++;
-    }
-    
+    // vector<int> arr = {4,1,2,2,3,2,4,4,4};
+    // map<int,int> mp;
+    // int max = 0;
+    // for (int i = 0; i < arr.size(); i++)
+    // {
+    //     mp[arr[i]]++;
+    // }
+    // map<int,int>::iterator it = mp.begin();
+    // while(it!=mp.end()){
+    //     pair<int,int> pr = *it;
+    //     if(pr.second>max){
+    //         max = pr.second;
+    //     }
+    //     it++;
+    // }
+    // it = mp.begin();
+    // while(it!=mp.end()){
+    //     pair<int,int> pr = *it;
+    //     if(pr.second==max){
+    //         cout<<pr.second<<endl;
+    //     }
+    //     it++;
+    // }
+    vector<int> arr;
+    arr.push_back(10);
+    arr.push_back(10);
+    arr.push_back(10);
+    cout<<arr.capacity();
+
     
     return 0;
 }
